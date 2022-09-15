@@ -26,7 +26,7 @@ jobs:
         uses:  Quobis/action-owasp-dependecy-track-check@main
         with:
           url: 'http://10.2.108.10:18080/'
-          key: '${{ secrets.DEP_TRACK }}'
+          key: '${{ secrets.DEP_TRACK_PASS }}'
           language: 'maven'
       
       # Show the risk score output 
