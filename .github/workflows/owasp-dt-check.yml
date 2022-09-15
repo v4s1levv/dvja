@@ -25,8 +25,8 @@ jobs:
         id: riskscoreFromDT
         uses:  Quobis/action-owasp-dependecy-track-check@main
         with:
-          url: ''
-          key: ''
+          url: 'http://10.2.108.10:18080'
+          key: '${{ secrets.SECRET_KEY }}'
           language: 'java'
       
       # Show the risk score output 
